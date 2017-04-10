@@ -3,8 +3,12 @@
 
 <head>
     <title>mungjar</title>
+
     <link type="text/css" rel="stylesheet" href="{{ asset('css/materialize.css') }}" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="{{ asset('css/style.css') }}" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -27,6 +31,18 @@
 
             <div class="banner-text">
                 <h1>mungjar</h1>
+                <div class="separator"></div>
+                <p class="center">Freelancer &amp; Streamer</p>
+
+                <div class="social center">
+                    <a href="https://twitch.tv/mungjar"><span class="social-group"><i class="fa fa-twitch" aria-hidden="true"></i> mungjar</span></a>
+                    <a href="https://twitter.com/mungasaur"><span class="social-group"><i class="fa fa-twitter" aria-hidden="true"></i> mungasaur</span></a>
+                    <a href="https://instagram.com/mungasaur"><span class="social-group"><i class="fa fa-instagram" aria-hidden="true"></i> mungasaur</span></a>
+                </div>
+                <div class="center">
+                    <a class="waves-effect waves-light btn hide-on-large-only">Hire Me</a>
+                </div>
+
             </div>
 
             <div class="container"></div>

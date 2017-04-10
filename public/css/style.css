@@ -1,7 +1,7 @@
 html, body, header {
 	height: 100%;
 	width: 100%;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #333;
 }
 
@@ -45,7 +45,7 @@ nav {
 	transition: color .3s;
 }
 
-.text-nav > li > a:hover{
+.text-nav > li > a:hover {
 	background-color: inherit;
 	color: #ccc;
 }
@@ -56,16 +56,70 @@ nav {
 	margin-top: 10%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
+	color: #fff;
+	font-size: 2em;
 }
 
 .banner-text > h1 {
 	font-size: 3em !important;
 	font-weight: 700;
-	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 }
 
+.banner-text > p {
+	font-size: .7em;
+}
+
+.banner-text > .social {
+	padding-top: 10%;
+	font-size: .6em;
+}
+
+.banner-text > .social > a {
+	color: #fff;
+}
+
+.banner-text > .social > a:hover .fa {
+	-webkit-transition: color .3s;
+	transition: color .3s;
+}
+
+.banner-text > .social > a:hover .fa-twitch {
+	color: #6441a5 !important;
+}
+
+.banner-text > .social > a:hover .fa-twitter {
+	color: #0084b4 !important;
+}
+
+.banner-text > .social > a:hover .fa-instagram {
+	color: #cd486b !important;
+}
+
+.banner-text > .center > .btn {
+	margin-top: 20%;
+	margin-left: -3%;
+	font-size: .5em;
+}
+
+.social-group {
+	padding-right: 2%;
+}
+
 h1, h2, h3, h4, h5 {
 	font-family: 'Oswald', sans-serif;
+}
+
+.separator {
+    height: 2px;
+    width: 30%;
+    background-color: #d9d9d9;
+    margin: 0 0 0 33%;
+}
+
+@media only screen and (max-width: 600px) {
+	.banner-text {
+		margin-top: 20%;
+	}
 }
