@@ -1,3 +1,71 @@
+html, body, header {
+	height: 100%;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+	color: #333;
+}
+
 nav {
+    position: absolute;
+    background-color: inherit;
+}
+
+.banner {
+	width: 100%;
+	height: 93%;
+	background: url("../img/banner.jpg") no-repeat scroll center center / cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banner > .container {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(33, 33, 33, 0.4);
+	margin: 0;
+}
+
+nav {
+	margin-top: 1%;
+	padding-right: 5%;
+}
+
+#nav > li > a {
+	font-family: 'Roboto Black', sans-serif;
+	font-size: .8em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.text-nav > li > a {
+	-webkit-transition: color .3s;
+	transition: color .3s;
+}
+
+.text-nav > li > a:hover{
 	background-color: inherit;
+	color: #ccc;
+}
+
+.banner-text {
+	position: absolute;
+	left: 50%;
+	margin-top: 10%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.banner-text > h1 {
+	font-size: 3em !important;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Oswald', sans-serif;
 }
