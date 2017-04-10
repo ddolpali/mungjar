@@ -3,6 +3,7 @@ html, body, header {
 	width: 100%;
 	font-family: 'Roboto', sans-serif;
 	color: #333;
+	background-color: #f2f2f2;
 }
 
 nav {
@@ -69,11 +70,12 @@ nav {
 
 .banner-text > p {
 	font-size: .7em;
+	font-weight: 300;
 }
 
 .banner-text > .social {
 	padding-top: 10%;
-	font-size: .6em;
+	font-size: .5em;
 }
 
 .banner-text > .social > a {
@@ -112,14 +114,54 @@ h1, h2, h3, h4, h5 {
 }
 
 .separator {
-    height: 2px;
+    height: 4px;
     width: 30%;
     background-color: #d9d9d9;
     margin: 0 0 0 33%;
 }
 
+.down-btn {
+	left: 48%;
+	margin-top: -2%;
+}
+.down-btn > i {
+	font-size: .9em;
+}
+
 @media only screen and (max-width: 600px) {
 	.banner-text {
 		margin-top: 20%;
+	}
+	.down-btn {
+		left: 45%;
+		margin-top: -5%;
+	}
+	.down-btn > i {
+		font-size: .9em;
+	}
+}
+
+.grid-item {
+	width: 25%;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.grid-item2 {
+	width: 50%;
+}
+.grid-item3 {
+	width: 25%;
+}
+.grid-item img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 1080px) {
+	.down-btn {
+		left: 47%;
+		margin-top: -3%;
+	}
+	.down-btn > i {
+		font-size: .9em;
 	}
 }
