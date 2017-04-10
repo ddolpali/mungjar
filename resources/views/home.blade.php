@@ -9,7 +9,7 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -157,8 +157,12 @@
             </div>
         </div>
     </main>
-    <footer>
-
+    <footer class="page-footer grey darken-4">
+        <div class="footer-copyright">
+            <div class="container white-text center">
+                &copy; 2017 mungjar. All Rights Reserved. Website created with <i class="fa fa-heart"></i> by <a href="https://github.com/ddolpali">ddolpali.</a>
+            </div>
+        </div>
     </footer>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
