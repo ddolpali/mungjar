@@ -12,5 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::get('portfolio',[
+    'as' => 'portfolio',
+    'uses' => 'PageController@portfolio'
+]);
+
+Route::get('tos',[
+    'as' => 'tos',
+    'uses' => 'PageController@tos'
+]);
+
+Route::get('contact',[
+    'as' => 'contact',
+    'uses' => 'PageController@contact'
+]);
