@@ -12,8 +12,11 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'mungjar'),
 
+
+    'cssVersion' => env('CSS_VERSION', '1'), // "purge" cache
+    'webhook' => env('WEBHOOK', ''),
     /*
     |--------------------------------------------------------------------------
     | Application Environment

@@ -11,21 +11,32 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [
+    'as' => 'home',
+    'uses' => 'PageController@index'
+]);
 
-Route::get('portfolio',[
+Route::get('hire', [
+    'as' => 'hire',
+    'uses' => 'PageController@hire'
+]);
+
+Route::get('portfolio', [
     'as' => 'portfolio',
     'uses' => 'PageController@portfolio'
 ]);
 
-Route::get('tos',[
+Route::get('tos', [
     'as' => 'tos',
     'uses' => 'PageController@tos'
 ]);
 
-Route::get('contact',[
+Route::get('faq', [
+    'as' => 'faq',
+    'uses' => 'PageController@faq'
+]);
+
+Route::get('contact', [
     'as' => 'contact',
     'uses' => 'PageController@contact'
 ]);
