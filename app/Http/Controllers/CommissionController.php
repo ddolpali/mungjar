@@ -16,7 +16,7 @@ class CommissionController extends Controller
      */
     public function index()
     {
-        return view('commissions.create');
+        return view('commissions.index', ['commissions' => Commission::orderBy('status')->paginate(5)]);
     }
 
     /**
@@ -61,8 +61,8 @@ class CommissionController extends Controller
         $commission->paypal = $input['paypal'];
         $commission->ign = $input['ign'];
         $commission->deadline = $input['deadline'];
-        $commission->type = $input['type'];
-        $commission->other = $input['other'];
+        $commission->type = ucfirst($input['type']);
+        $commission->other = ucfirst($input['other']);
         $commission->commercial = $input['commercial'];
         $commission->comments = $input['comments'];
 

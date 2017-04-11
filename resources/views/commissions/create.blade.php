@@ -46,6 +46,10 @@
 			                <label for="chibi">Chibi</label>
 						</p>
 						<p>
+							<input name="type" type="radio" value="chibi 2" id="chibi2" />
+							<label for="chibi2">Chibi 2</label>
+						</p>
+						<p>
 							<input name="type" type="radio" value="panel" id="panel" />
 							<label for="panel">Panel</label>
 						</p>

@@ -16,6 +16,7 @@ class CreateCommissionsTable extends Migration
         Schema::create('commissions', function (Blueprint $table) {
             $table->increments('id');
             $table->string('token');
+            $table->tinyInteger('status')->default(0);
             $table->string('name');
             $table->string('paypal');
             $table->string('ign')->nullable();
