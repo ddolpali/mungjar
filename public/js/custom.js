@@ -24,19 +24,5 @@ $(document).ready(function() {
       selectMonths: true,
       selectYears: 15
     });
-
-    // Smooth Smooth
-    $("a").on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function() {
-
-                window.location.hash = hash;
-            });
-        }
-    });
+    $('.carousel').carousel();
 });

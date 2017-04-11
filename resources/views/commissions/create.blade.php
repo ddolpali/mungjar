@@ -9,6 +9,7 @@
 				<div class="card-panel">
 					<h3>STOP! Before Proceeding...</h3>
 					<p>Please read my <a href="{{ route('tos') }}">Terms of Service.</a></p>
+					<p>To see prices, check out the <a href="{{ route('packages') }}">packages page.</a></p>
 					<p>Note that you will be contacted through your PayPal email, so please make sure that you provide a valid email.</p>
 					@if (count($errors) > 0)
 						<div class="red-text">

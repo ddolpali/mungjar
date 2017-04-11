@@ -21,6 +21,16 @@ class PageController extends Controller
         return view('tos');
     }
 
+	public function faq()
+    {
+        return view('faq');
+    }
+
+	public function packages()
+    {
+        return view('packages');
+    }
+
 	public function contact(Request $request)
     {
 		if ($request->isMethod('get'))

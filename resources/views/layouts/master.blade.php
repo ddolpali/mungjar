@@ -51,6 +51,7 @@
                 <ul id="nav" class="right text-nav hide-on-med-and-down">
                     <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
                     <li><a href="{{ route('tos') }}">TOS</a></li>
+                    <li><a href="{{ route('faq') }}">FAQ</a></li>
                     <li><a href="{{ route('contact') }}">Contact</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile">
@@ -113,6 +114,24 @@
                 Materialize.toast('Message has been sent!', 4000);
             });
         </script>
+    @elseif (Request::is('/'))
+        <script>
+            $(document).ready(function() {
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function() {
+
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+       </script>
     @endif
 </body>
 

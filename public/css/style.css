@@ -211,6 +211,10 @@ h1, h2, h3, h4, h5, .brand-logo {
     margin: 0 auto;
 }
 
+.carousel {
+    margin-top: -12%;
+}
+
 @media only screen and (max-width: 1080px) {
     .down-btn {
         left: 47%;

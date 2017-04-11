@@ -18,6 +18,11 @@ Route::get('/', [
 
 Route::resource('commissions', 'CommissionController');
 
+Route::get('packages', [
+    'as' => 'packages',
+    'uses' => 'PageController@packages'
+]);
+
 Route::get('portfolio', [
     'as' => 'portfolio',
     'uses' => 'PageController@portfolio'
