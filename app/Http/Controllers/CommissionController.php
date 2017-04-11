@@ -26,6 +26,8 @@ class CommissionController extends Controller
      */
     public function create()
     {
+        if (!config('app.commissions'))
+            return view('tos');
         return view('commissions.create');
     }
 
@@ -72,7 +74,7 @@ class CommissionController extends Controller
             $commercial = 'No';
 
         $route = route('commissions.show', $token);
-        sendHook("zOMG!!~ A new commission has been requested!\r\nName: {$input['name']}\r\nPayPal Email: {$input['paypal']}\r\nCharacter Name: {$input['ign']}\r\nRequested Deadline: {$input['deadline']}\r\nCommission Type:{$input['type']}\r\nCommercial Use? {$commercial}\r\nAdditional Information: {$input['comments']}\r\n{$route}\r\n@everyone");
+        sendHook("**zOMG!!~ A new commission has been requested!**\r\nName: {$input['name']}\r\nPayPal Email: {$input['paypal']}\r\nCharacter Name: {$input['ign']}\r\nRequested Deadline: {$input['deadline']}\r\nCommission Type:{$input['type']}\r\nCommercial Use? {$commercial}\r\nAdditional Information: {$input['comments']}\r\n{$route}\r\n@everyone");
 
         return view('commissions.success', ['token' => $token]);
     }

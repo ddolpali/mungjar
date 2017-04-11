@@ -17,6 +17,8 @@ return [
     'discord' => env('DISCORD', ''),
     'cssVersion' => env('CSS_VERSION', '1'), // "purge" cache
     'webhook' => env('WEBHOOK', ''),
+    'commissions' => env('COMMISSIONS', true),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment

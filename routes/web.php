@@ -37,3 +37,8 @@ Route::get('contact', [
     'as' => 'contact',
     'uses' => 'PageController@contact'
 ]);
+
+Route::post('contact', [
+    'as' => 'contact',
+    'uses' => 'PageController@contact'
+]);

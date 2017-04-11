@@ -36,6 +36,7 @@
             }
         </style>
     @endif
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 </head>
 
 <body>
@@ -101,12 +102,18 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.1/SmoothScroll.min.js"></script>
     <script type="text/javascript" src="{{ asset('js/materialize.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/custom.js') }}?ver={{ config('app.cssVersion') }}"></script>
+    @if (Request::is('contact') && $success)
+        <script>
+            $(document).ready(function() {
+                Materialize.toast('Message has been sent!', 4000);
+            });
+        </script>
+    @endif
 </body>
 
 </html>

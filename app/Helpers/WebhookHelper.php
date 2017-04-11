@@ -10,12 +10,13 @@ if (!function_exists('sendHook')) {
      * @param string $content
      * @return string
      */
-    function sendHook($content)
+    function sendHook($content, $nick = "Commission")
     {
         $client = new Client();
         $webhook = config('app.webhook');
 
         $data = array(
+            'username' => $nick,
             'content' => $content,
             'tts' => 'false'
             );

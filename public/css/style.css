@@ -61,6 +61,7 @@ a, .text-nav > li > a {
     transition: color .3s;
 }
 
+.nav-wrapper > a:hover,
 .text-nav > li > a:hover {
     background-color: inherit;
     color: #ccc;
@@ -92,6 +93,10 @@ a, .text-nav > li > a {
     font-weight: 300;
 }
 
+.social-content > a {
+    color: #333;
+}
+
 .banner-text > .social {
     padding-top: 10%;
     font-size: .5em;
@@ -101,6 +106,7 @@ a, .text-nav > li > a {
     color: #fff;
 }
 
+.social-content > a:hover .fa,
 .banner-text > .social > a:hover .fa {
     -webkit-transition: color .3s;
     transition: color .3s;
@@ -110,10 +116,12 @@ a, .text-nav > li > a {
     color: #6441a5 !important;
 }
 
+.social-content > a:hover .fa-twitter,
 .banner-text > .social > a:hover .fa-twitter {
     color: #0084b4 !important;
 }
 
+.social-content > a:hover .fa-instagram,
 .banner-text > .social > a:hover .fa-instagram {
     color: #cd486b !important;
 }
@@ -192,6 +200,10 @@ h1, h2, h3, h4, h5, .brand-logo {
 .fa-long-arrow-down {
     -webkit-animation: Bounce 2s linear infinite;
 	animation: Bounce 2s linear infinite;
+}
+
+.space {
+    margin-bottom: 15%;
 }
 
 #recaptcha {
