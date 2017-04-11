@@ -190,6 +190,11 @@ h1, h2, h3, h4, h5 {
 	animation: Bounce 2s linear infinite;
 }
 
+#recaptcha {
+    width: 304px;
+    margin: 0 auto;
+}
+
 @media only screen and (max-width: 1080px) {
     .down-btn {
         left: 47%;

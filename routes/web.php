@@ -16,10 +16,7 @@ Route::get('/', [
     'uses' => 'PageController@index'
 ]);
 
-Route::get('hire', [
-    'as' => 'hire',
-    'uses' => 'PageController@hire'
-]);
+Route::resource('commissions', 'CommissionController');
 
 Route::get('portfolio', [
     'as' => 'portfolio',

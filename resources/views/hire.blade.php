@@ -11,7 +11,8 @@
 					<p>Note that you will be contacted through your PayPal email, so please make sure that you provide a valid email.</p>
 					<p class="grey-text">Fields marked with * are required.</p>
 					<br />
-					<form action="{{ route('hire') }}" method="post">
+					<form action="{{ route('commissions.store') }}" method="post">
+						{{ csrf_field() }}
 		                <div class="input-field">
 		                    <input placeholder="John Doe" name="name" id="name" type="text" class="validate" required>
 		                    <label for="name">Name*</label>
@@ -63,6 +64,11 @@
 					      <input name="tos" type="checkbox" class="filled-in" id="filled-in-box" required />
 					      <label for="filled-in-box">I have made sure that I have read the <a href="{{ route('tos') }}">Terms of Service</a> and accept them.*</label>
 					    </p>
+						<br />
+						<div id="recaptcha">
+							{!! app('captcha')->display(); !!}
+						</div>
+						<br />
 						<div class="center">
 							<button type="submit" class="btn waves-effect waves-light center">Submit</button>
 						</div>

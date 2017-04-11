@@ -10,9 +10,4 @@ class PageController extends Controller
     {
         return view('home');
     }
-
-	public function hire()
-    {
-        return view('hire');
-    }
 }

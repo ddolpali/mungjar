@@ -44,7 +44,7 @@
             <div class="nav-wrapper">
                 <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav" class="right hide-on-med-and-down">
-                    <li><a href="{{ route('hire') }}" class="waves-effect waves-light btn">Hire Me</a></li>
+                    <li><a href="{{ route('commissions.create') }}" class="waves-effect waves-light btn">Hire Me</a></li>
                 </ul>
                 <ul id="nav" class="right text-nav hide-on-med-and-down">
                     <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
