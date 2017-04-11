@@ -42,6 +42,7 @@
     <header>
         <nav class="z-depth-0">
             <div class="nav-wrapper">
+                @if (!Request::is('/')) <a href="{{ route('home') }}" class="brand-logo">{{ config('app.name') }}</a> @endif
                 <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav" class="right hide-on-med-and-down">
                     <li><a href="{{ route('commissions.create') }}" class="waves-effect waves-light btn">Hire Me</a></li>
@@ -82,7 +83,7 @@
                 <div class="banner-text">
                     <h1>@yield('pageTitle')</h1>
                     <div class="separator"></div>
-                    <p class="center smallText">I have the right to refuse service to <em>anyone</em>.</p>
+                    <p class="center smallText">@yield('pageDesc')</p>
                 </div>
             </div>
         @endif

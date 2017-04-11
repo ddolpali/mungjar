@@ -16,7 +16,7 @@ class CommissionController extends Controller
      */
     public function index()
     {
-        return view('commissions');
+        return view('commissions.create');
     }
 
     /**
@@ -26,7 +26,7 @@ class CommissionController extends Controller
      */
     public function create()
     {
-        return view('hire');
+        return view('commissions.create');
     }
 
     /**
@@ -51,14 +51,16 @@ class CommissionController extends Controller
         ]);
 
         $input = $request->all();
+        $token = str_random(8);
 
         $commission = new Commission();
-        $commission->token = str_random(8);
+        $commission->token = $token;
         $commission->name = $input['name'];
         $commission->paypal = $input['paypal'];
         $commission->ign = $input['ign'];
         $commission->deadline = $input['deadline'];
         $commission->type = $input['type'];
+        $commission->other = $input['other'];
         $commission->commercial = $input['commercial'];
         $commission->comments = $input['comments'];
 
@@ -69,7 +71,10 @@ class CommissionController extends Controller
         else
             $commercial = 'No';
 
-        sendHook("zOMG!!~ A new commission has been requested!\r\nName: {$input['name']}\r\nPayPal Email: {$input['paypal']}\r\nCharacter Name: {$input['ign']}\r\nRequested Deadline: {$input['deadline']}\r\nCommission Type:{$input['type']}\r\nCommercial Use? {$commercial}\r\nAdditional Information: {$input['comments']}\r\n@everyone");
+        $route = route('commissions.show', $token);
+        sendHook("zOMG!!~ A new commission has been requested!\r\nName: {$input['name']}\r\nPayPal Email: {$input['paypal']}\r\nCharacter Name: {$input['ign']}\r\nRequested Deadline: {$input['deadline']}\r\nCommission Type:{$input['type']}\r\nCommercial Use? {$commercial}\r\nAdditional Information: {$input['comments']}\r\n{$route}\r\n@everyone");
+
+        return view('commissions.success', ['token' => $token]);
     }
 
     /**
@@ -80,6 +85,6 @@ class CommissionController extends Controller
      */
     public function show(Commission $commission)
     {
-        //
+        return view('commissions.show', ['commission' => $commission]);
     }
 }

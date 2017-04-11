@@ -12,7 +12,6 @@ if (!function_exists('sendHook')) {
      */
     function sendHook($content)
     {
-        echo $content;
         $client = new Client();
         $webhook = config('app.webhook');
 

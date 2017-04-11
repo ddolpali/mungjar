@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('pageTitle', 'Hire Mungjar')
+@section('pageDesc', 'I have the right to refuse service to anyone.')
 
 @section('content')
 	<div class="container">
@@ -9,6 +10,15 @@
 					<h3>STOP! Before Proceeding...</h3>
 					<p>Please read my <a href="{{ route('tos') }}">Terms of Service.</a></p>
 					<p>Note that you will be contacted through your PayPal email, so please make sure that you provide a valid email.</p>
+					@if (count($errors) > 0)
+						<div class="red-text">
+					        <ul>
+					            @foreach ($errors->all() as $error)
+					                <li>{{ $error }}</li>
+					            @endforeach
+					        </ul>
+					    </div>
+					@endif
 					<p class="grey-text">Fields marked with * are required.</p>
 					<br />
 					<form action="{{ route('commissions.store') }}" method="post">

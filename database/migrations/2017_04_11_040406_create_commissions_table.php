@@ -21,6 +21,7 @@ class CreateCommissionsTable extends Migration
             $table->string('ign')->nullable();
             $table->string('deadline')->nullable();
             $table->string('type');
+            $table->string('other')->nullable();
             $table->tinyInteger('commercial');
             $table->text('comments')->nullable();
             $table->timestamps();

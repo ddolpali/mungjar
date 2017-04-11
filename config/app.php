@@ -14,7 +14,7 @@ return [
 
     'name' => env('APP_NAME', 'mungjar'),
 
-
+    'discord' => env('DISCORD', ''),
     'cssVersion' => env('CSS_VERSION', '1'), // "purge" cache
     'webhook' => env('WEBHOOK', ''),
     /*
