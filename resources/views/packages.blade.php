@@ -10,7 +10,7 @@
 					<section id="chibi1" class="center">
 						<h3>Chibi Style &num;1</h3>
 						<div class="carousel">
-							@foreach (File::allFiles('img/chibi1') as $chibi)
+							@foreach (File::allFiles('img/portfolio/chibi1') as $chibi)
 								<a class="carousel-item" href=""><img src="{{ $chibi }}"></a>
 							@endforeach
 						</div>
@@ -26,7 +26,7 @@
 					<section id="chibi2" class="center">
 						<h3>Chibi Style &num;2</h3>
 						<div class="carousel">
-							@foreach (File::allFiles('img/chibi2') as $chibi)
+							@foreach (File::allFiles('img/portfolio/chibi2') as $chibi)
 								<a class="carousel-item" href=""><img src="{{ $chibi }}"></a>
 							@endforeach
 						</div>
@@ -42,7 +42,7 @@
 					<section id="panels" class="center">
 						<h3>Chibi Style &num;2</h3>
 						<div class="carousel" style="margin-top: 5%;height: 200px;">
-							@foreach (File::allFiles('img/panels') as $panel)
+							@foreach (File::allFiles('img/portfolio/panels') as $panel)
 								<a class="carousel-item" href=""><img src="{{ $panel }}"></a>
 							@endforeach
 						</div>
