@@ -8,12 +8,8 @@
                 <h3 id="latest">Latest Work</h3>
                 <div class="gallery_menu">
                     <ul id="filter" class="filter-menu">
-                        <li class="waves-effect waves-light btn disabled" data-filter="*">All
-                            <div class="ripple-container"></div>
-                        </li>
-                        <li class="waves-effect waves-light btn" data-filter=".chibi">Chibi
-                            <div class="ripple-container"></div>
-                        </li>
+                        <li class="waves-effect waves-light btn disabled" data-filter="*">All</li>
+                        <li class="waves-effect waves-light btn" data-filter=".chibi">Chibi</li>
                         <li class="waves-effect waves-light btn" data-filter=".disney">Disney</li>
                         <li class="waves-effect waves-light btn" data-filter=".real">Semi-Realistic</li>
                         <li class="waves-effect waves-light btn" data-filter=".other">Other</li>

@@ -9,12 +9,9 @@
 				<div class="card-panel">
 					<div class="gallery_menu">
 						<ul id="filter" class="filter-menu">
-							<li class="waves-effect waves-light btn disabled" data-filter="*">All
-								<div class="ripple-container"></div>
-							</li>
-							<li class="waves-effect waves-light btn" data-filter=".chibi1">Chibi1
-								<div class="ripple-container"></div>
-							</li>
+							<li class="waves-effect waves-light btn disabled" data-filter="*">All</li>
+							<li class="waves-effect waves-light btn" data-filter=".commission">Commissions</li>
+							<li class="waves-effect waves-light btn" data-filter=".chibi1">Chibi1</li>
 							<li class="waves-effect waves-light btn" data-filter=".chibi2">Chibi2</li>
 							<li class="waves-effect waves-light btn" data-filter=".other">Other</li>
 						</ul>
