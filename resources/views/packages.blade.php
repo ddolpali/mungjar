@@ -40,7 +40,7 @@
 						</ul>
 					</section>
 					<section id="panels" class="center">
-						<h3>Chibi Style &num;2</h3>
+						<h3>Stream Panels</h3>
 						<div class="carousel" style="margin-top: 5%;height: 200px;">
 							@foreach (File::allFiles('img/portfolio/panels') as $panel)
 								<a class="carousel-item" href=""><img src="{{ $panel }}"></a>

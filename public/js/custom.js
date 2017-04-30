@@ -1,11 +1,13 @@
 $(document).ready(function() {
-    // Isotope + Masonry
-    var $portfolio = $('.gallery_items');
+    $container.imagesLoaded(function () {
+        // Isotope + Masonry
+        var $portfolio = $('.gallery_items');
 
-    $portfolio.isotope({
-        itemSelector: '.grid-item',
-        layoutMode: 'masonry',
-        filter: '*'
+        $portfolio.isotope({
+            itemSelector: '.grid-item',
+            layoutMode: 'masonry',
+            filter: '*'
+        });
     });
 
     $('.filter-menu li').on('click', function() {
