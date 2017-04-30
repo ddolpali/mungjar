@@ -2,6 +2,11 @@
 @section('pageTitle', 'Portfolio')
 @section('pageDesc', 'Check out some of the work I\'ve done!')
 
+@php
+	$directories = File::directories('img/portfolio');
+	shuffle($directories);
+@endphp
+
 @section('content')
 	<div class="container">
 		<div class="row">
@@ -17,8 +22,9 @@
 						</ul>
 					</div>
 					<div class="gallery_items grid" style="position: relative; height: 722px;">
-					@foreach (File::directories('img/portfolio') as $directory)
-						@foreach (File::allFiles($directory) as $image)
+					@foreach ($directories as $directory)
+						@php $files = File::allFiles($directory); shuffle($files); @endphp
+						@foreach ($files as $image)
 							<div class="grid-item {{ substr(dirname($image), 14) }}@if(endsWith($directory, "chibi1") || endsWith($directory, "chibi2") || endsWith($directory, "panels")) commission @else other @endif">
 		                        <div class="card hoverable">
 		                            <div class="card-image waves-effect waves-block waves-light">

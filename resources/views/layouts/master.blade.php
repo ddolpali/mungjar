@@ -105,6 +105,7 @@
 
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.1/SmoothScroll.min.js"></script>
     <script type="text/javascript" src="{{ asset('js/materialize.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/custom.js') }}?ver={{ config('app.cssVersion') }}"></script>

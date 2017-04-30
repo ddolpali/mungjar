@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    $container.imagesLoaded(function () {
+    var $portfolio = $('.gallery_items');
+    
+    $portfolio.imagesLoaded(function () {
         // Isotope + Masonry
-        var $portfolio = $('.gallery_items');
-
         $portfolio.isotope({
             itemSelector: '.grid-item',
             layoutMode: 'masonry',
